@@ -42,12 +42,6 @@
     - id: current
       url: /reference/current/
       title: jetson current
-    - id: deactivate
-      url: /reference/deactivate/
-      title: jetson deactivate
-    - id: activate
-      url: /reference/activate/
-      title: jetson activate
     - id: help
       url: /reference/help/
       title: jetson help

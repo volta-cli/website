@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include sidebar.html class="home" %}
+<main class="page-container home" aria-label="Content">
+<div class="page-contents">
+    <div class="hero">
+        <h1>Jetson</h1>
+        <p class="description">{{ page.tagline }}</p>
+        <p class="action"><a class="nav-link action-button" href="{{ page.start }}">Get Started &rarr;</a></p>
+    </div>
+
+    <div class="features">
+        {% for feature in page.features %}
+        <div class="feature">
+            <h2>{{ feature.title }}</h2>
+            <p>{{ feature.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="content custom">
+        {{ content }}
+    </div>
+</div>
+{% include footer.html %}
+</main>

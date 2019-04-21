@@ -1,0 +1,84 @@
+- id: guide
+  url: /guide/
+  title: Guide
+  docs:
+    - id: index
+      url: /guide/
+      title: Introduction
+      sub-headers:
+        - id: features
+          title: Features
+        - id: why-jetson
+          title: Why Jetson?
+        - id: how-does-it-work
+          title: How does it work?
+    - id: getting-started
+      url: /guide/getting-started/
+      title: Getting Started
+    - id: understanding
+      url: /guide/understanding/
+      title: Understanding Jetson
+      sub-headers:
+        - id: managing-your-toolchain
+          title: Managing your toolchain
+        - id: managing-your-project
+          title: Managing your project
+- id: reference
+  url: /reference/
+  title: Reference
+  docs:
+    - id: index
+      url: /reference/
+      title: Jetson Commands
+    - id: fetch
+      url: /reference/fetch/
+      title: jetson fetch
+    - id: install
+      url: /reference/install/
+      title: jetson install
+    - id: pin
+      url: /reference/pin/
+      title: jetson pin
+    - id: current
+      url: /reference/current/
+      title: jetson current
+    - id: deactivate
+      url: /reference/deactivate/
+      title: jetson deactivate
+    - id: activate
+      url: /reference/activate/
+      title: jetson activate
+    - id: help
+      url: /reference/help/
+      title: jetson help
+    - id: version
+      url: /reference/version/
+      title: jetson version
+# - id: advanced
+#   url: /advanced/
+#   title: Advanced
+#   docs:
+#     - id: index
+#       url: /advanced/
+#       title: Advanced Usage
+#     - id: hooks
+#       url: /advanced/hooks/
+#       title: Hooks
+- id: contributing
+  url: /contributing/
+  title: Contributing
+  docs:
+    - id: index
+      url: /contributing/
+      title: Contributing Guide
+      sub-headers:
+        - id: community
+          title: Community
+        - id: code-of-conduct
+          title: Code of Conduct
+        - id: development
+          title: Development
+        - id: debugging
+          title: Debugging
+        - id: tests
+          title: Tests

@@ -1,0 +1,7 @@
+class Subnav < Jekyll::Generator
+    def generate(site)
+        site.collections.guide.each do |guide|
+            puts guide.title
+        end
+    end
+end

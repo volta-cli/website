@@ -1,0 +1,42 @@
+<nav class="sidebar {{include.class}}">
+    {% include sitenav.html id="mobile-site-nav" %}
+    <ul class="sidebar-links">
+        {% for section in site.data.sidebar %}
+        <li>
+            {% if page.collection == section.id %}
+                {% assign collapseClass = "" %}
+            {% else %}
+                {% assign collapseClass = " collapsed" %}
+            {% endif %}
+            <div class="sidebar-group{{ collapseClass }}">
+                <p class="sidebar-heading" onclick="toggleSidebarGroup(this.parentNode)">
+                    <span>{{ section.title }}</span>
+                    <span class="arrow"></span>
+                </p>
+                {% if section.docs %}
+                <ul class="sidebar-group-items">
+                    {% for doc in section.docs %}
+                    <li>
+                        {% assign computedPath = section.url | append: doc.id %}
+                        {% if page.id == computedPath %}
+                          {% assign activeLink = " active" %}
+                        {% else %}
+                          {% assign activeLink = "" %}
+                        {% endif %}
+                        <a class="sidebar-link{{ activeLink }}" href="{{ doc.url }}">{{ doc.title }}</a>
+                        {% if doc.sub-headers %}
+                        <ul class="sidebar-sub-headers">
+                            {% for subheader in doc.sub-headers %}
+                            <li class="sidebar-sub-header"><a class="sidebar-link" href="{{ doc.url }}#{{ subheader.id }}">{{ subheader.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

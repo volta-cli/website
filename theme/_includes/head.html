@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:500,700|Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml"  href="https://blog.jetson.sh/feed.xml" title="{{ site.title }}">
+    
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+    {% endif %}
+  
+    <script src="{{ "/assets/jquery-3.3.1.min.js" | relative_url }}"></script>
+    <script>
+      function toggleSidebarGroup(elt) {
+        $(elt).find('.sidebar-group-items')
+              .slideToggle(50, function() {
+                $(elt).toggleClass('collapsed');
+              });
+      }
+      $(function() {
+        $('main').on('click', function() {
+          $('nav.sidebar').removeClass('visible');
+        });
+      });
+    </script>
+  </head>
+  

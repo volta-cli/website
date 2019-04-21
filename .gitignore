@@ -1,0 +1,8 @@
+theme/*.gem
+theme/.bundle
+theme/.sass-cache
+theme/_site
+theme/Gemfile.lock
+subdomains/*/.jekyll-metadata
+subdomains/*/.sass-cache
+subdomains/*/_site

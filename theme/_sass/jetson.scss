@@ -1,0 +1,18 @@
+@mixin font-smoothing($value: true) {
+    @if ($value == true) {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    } @else {
+      -moz-osx-font-smoothing: auto;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+
+// Import partials.
+@import
+  "jetson/constants",
+  "jetson/alerts",
+  "jetson/base",
+  "jetson/layout",
+  "jetson/syntax-highlighting"
+;

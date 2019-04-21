@@ -1,0 +1,58 @@
+{% comment %}
+    The following is a breathtaking work of stunning beauty.
+
+    It make build time O(n^2) in the number of docs pages.
+    It uses nested loops and tons of state variables.
+    It uses absolutely no data abstraction, not even records.
+    It is implemented entirely using Liquid because I don't know Ruby.
+
+    This is fine.
+{% endcomment %}
+
+{% assign previousUrl = nil %}
+{% assign previousTitle = nil %}
+
+{% assign currentUrl = nil %}
+{% assign currentTitle = nil %}
+
+{% assign nextUrl = nil %}
+{% assign nextTitle = nil %}
+
+{% assign foundCurrent = false %}
+{% assign foundNext = false %}
+
+{% for section in site.data.sidebar %}
+    {% for doc in section.docs %}
+        {% assign computedPath = section.url | append: doc.id %}
+
+        {% if foundCurrent %}
+            {% assign nextUrl = computedPath %}
+            {% assign nextTitle = doc.title %}
+            {% assign foundNext = true %}
+            {% break %}
+        {% endif %}
+
+        {% assign previousUrl = currentUrl %}
+        {% assign previousTitle = currentTitle %}
+        {% assign currentUrl = computedPath %}
+        {% assign currentTitle = doc.title %}
+
+        {% if page.id == computedPath %}
+            {% assign foundCurrent = true %}
+        {% endif %}
+    {% endfor %}
+
+    {% if foundNext %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+<div class="page-nav">
+    <p class="inner">
+        {% if previousTitle %}
+            <span class="prev">&larr; <a class="prev router-link-active" href="{{ previousUrl }}">{{ previousTitle }}</a></span>
+        {% endif %}
+        {% if nextTitle %}
+            <span class="next"><a class="next router-link-active" href="{{ nextUrl }}">{{ nextTitle }}</a> &rarr;</span>
+        {% endif %}
+    </p>
+</div>

@@ -12,13 +12,17 @@
 {% assign previousUrl = nil %}
 {% assign previousTitle = nil %}
 
-{% assign currentUrl = nil %}
-{% assign currentTitle = nil %}
+{% assign currentUrl = '/' %}
+{% assign currentTitle = 'Jetson Docs' %}
 
 {% assign nextUrl = nil %}
 {% assign nextTitle = nil %}
 
-{% assign foundCurrent = false %}
+{% if page.url == '/' %}
+  {% assign foundCurrent = true %}
+{% else %}
+  {% assign foundCurrent = false %}
+{% endif %}
 {% assign foundNext = false %}
 
 {% for section in site.data.sidebar %}

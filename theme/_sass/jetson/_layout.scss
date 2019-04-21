@@ -96,13 +96,15 @@ header {
       }
       ul {
         a {
-          line-height: 1.4rem;
-          display: inline-block;
           color: $color-primary-very-dark;
           &:hover, &.router-link-active {
             color: $color-primary-very-dark;
-            margin-bottom: -2px;
-            border-bottom: 2px solid $color-secondary;
+            .hover-target {
+              line-height: 1.4rem;
+              display: inline-block;
+              margin-bottom: -2px;
+              border-bottom: 2px solid $color-secondary;
+            }
           }
         }
       }

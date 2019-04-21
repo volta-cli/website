@@ -51,9 +51,6 @@
     - id: help
       url: /reference/help/
       title: jetson help
-    - id: version
-      url: /reference/version/
-      title: jetson version
 # - id: advanced
 #   url: /advanced/
 #   title: Advanced

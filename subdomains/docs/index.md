@@ -5,7 +5,7 @@
 layout: doc
 ---
 
-# Jetson Documentation
+# Documentation
 
 Welcome to the Jetson documentation! You can choose from these guides:
 

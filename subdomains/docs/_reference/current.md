@@ -1,16 +1,16 @@
 ---
-title: jetson current
+title: volta current
 ---
 
-# `jetson current`
+# `volta current`
 
-The `jetson current` command has the following synax:
+The `volta current` command has the following synax:
 
 ```
 Display the currently activated Node version
 
 Usage:
-    jetson current [options]
+    volta current [options]
 
 Options:
     -h, --help     Display this message

@@ -8,8 +8,8 @@
       sub-headers:
         - id: features
           title: Features
-        - id: why-jetson
-          title: Why Jetson?
+        - id: why-volta
+          title: Why Volta?
         - id: how-does-it-work
           title: How does it work?
     - id: getting-started
@@ -17,7 +17,7 @@
       title: Getting Started
     - id: understanding
       url: /guide/understanding/
-      title: Understanding Jetson
+      title: Understanding Volta
       sub-headers:
         - id: managing-your-toolchain
           title: Managing your toolchain
@@ -29,22 +29,22 @@
   docs:
     - id: index
       url: /reference/
-      title: Jetson Commands
+      title: Volta Commands
     - id: fetch
       url: /reference/fetch/
-      title: jetson fetch
+      title: volta fetch
     - id: install
       url: /reference/install/
-      title: jetson install
+      title: volta install
     - id: pin
       url: /reference/pin/
-      title: jetson pin
+      title: volta pin
     - id: current
       url: /reference/current/
-      title: jetson current
+      title: volta current
     - id: help
       url: /reference/help/
-      title: jetson help
+      title: volta help
 # - id: advanced
 #   url: /advanced/
 #   title: Advanced

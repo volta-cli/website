@@ -1,7 +1,7 @@
 PATH
   remote: ../../theme
   specs:
-    jetson-jekyll-theme (0.1.0)
+    volta-jekyll-theme (0.1.0)
       jekyll (~> 3.8)
 
 GEM
@@ -67,8 +67,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
-  jetson-jekyll-theme!
   tzinfo-data
+  volta-jekyll-theme!
 
 BUNDLED WITH
    1.16.4

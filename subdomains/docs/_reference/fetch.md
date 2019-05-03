@@ -1,17 +1,17 @@
 ---
-title: jetson fetch
+title: volta fetch
 ---
 
-# `jetson fetch`
+# `volta fetch`
 
-The `jetson fetch` command has the following synax:
+The `volta fetch` command has the following synax:
 
 ```
 Fetch a tool to the local machine
 
 Usage:
-    jetson fetch <tool> <version>
-    jetson fetch -h | --help
+    volta fetch <tool> <version>
+    volta fetch -h | --help
 
 Options:
     -h, --help     Display this message

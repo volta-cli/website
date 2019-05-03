@@ -1,17 +1,17 @@
 ---
-title: jetson help
+title: volta help
 ---
 
-# `jetson help`
+# `volta help`
 
-The `jetson help` command has the following synax:
+The `volta help` command has the following synax:
 
 ```
-Get some help with a jetson command
+Get some help with a volta command
 
 Usage:
-    jetson help [<command>]
-    jetson help -h | --help
+    volta help [<command>]
+    volta help -h | --help
 
 Options:
     -h, --help     Display this message

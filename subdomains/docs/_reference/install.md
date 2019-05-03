@@ -1,21 +1,21 @@
 ---
-title: jetson install
+title: volta install
 ---
 
-# `jetson install`
+# `volta install`
 
-The `jetson install` command has the following synax:
+The `volta install` command has the following synax:
 
 ```
 Install a tool in the user toolchain
 
 Usage:
-    jetson install <tool> [<version>]
-    jetson install -h | --help
+    volta install <tool> [<version>]
+    volta install -h | --help
 
 Options:
     -h, --help     Display this message
 
 Supported Tools:
-    Currently Jetson supports installing `node` and `yarn` - support for more tools is coming soon!
+    Currently Volta supports installing `node` and `yarn` - support for more tools is coming soon!
 ```

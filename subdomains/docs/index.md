@@ -7,7 +7,7 @@ layout: doc
 
 # Documentation
 
-Welcome to the Jetson documentation! You can choose from these guides:
+Welcome to the Volta documentation! You can choose from these guides:
 
 - [User guide](/guide)
 - [Reference](/reference)

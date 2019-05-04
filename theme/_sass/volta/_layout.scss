@@ -22,7 +22,7 @@ header {
     left: 0;
     right: 0;
     background-color: white;
-    border-bottom: 1px solid #eaecef;
+    border-bottom: 1px solid $color-subtle-border;
     padding: 0.7rem 1.5rem;
 
     .site-name {
@@ -393,7 +393,8 @@ main.home .page-contents {
 footer {
     margin-top: 4rem;
     padding: 5rem 2.5rem;
-    background: #f0f0f0;
+    background: $color-primary-very-light;
+    border-top: 1px solid darken($color-subtle-border, 10%);
     text-align: center;
     color: $dark-text-color;
 

@@ -1,6 +1,6 @@
-# jetson.sh website
+# volta.sh website
 
-This is production repo for the `jetson.sh` website, hosted on Netlify.
+This is production repo for the `volta.sh` website, hosted on Netlify.
 
 The Jekyll theme and all subdomains that use it are in this repo, to easily facilitate cross-site changes.
 
@@ -19,8 +19,8 @@ The Jekyll theme used by the site is in the `theme/` directory.
 
 Each subdomain is in the `subdomains/` subdirectory corresponding to its name.
 
-The `subdomains/www/` subdirectory contains the apex domain (`https://jetson.sh`) as well as the `www.jetson.sh` subdomain (which Netlify redirects to the apex domain).
+The `subdomains/www/` subdirectory contains the apex domain (`https://volta.sh`) as well as the `www.volta.sh` subdomain (which Netlify redirects to the apex domain).
 
 ## Docs structure
 
-The `docs.jetson.sh` site has a sidebar and pagination structure based on the file in `subdomains/docs/_data/sidebar.yml`. If you change the set of pages in the docs site, make sure to update that file accordingly.
+The `docs.volta.sh` site has a sidebar and pagination structure based on the file in `subdomains/docs/_data/sidebar.yml`. If you change the set of pages in the docs site, make sure to update that file accordingly.

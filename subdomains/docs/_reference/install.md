@@ -10,7 +10,7 @@ The `volta install` command has the following synax:
 Install a tool in the user toolchain
 
 Usage:
-    volta install <tool> [<version>]
+    volta install <tool>[@<version>]
     volta install -h | --help
 
 Options:

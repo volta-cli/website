@@ -19,13 +19,13 @@ When you install a tool to your toolchain, you always choose a _default version_
 For example, you can select your default version of `node` by installing a particular version:
 
 ```sh
-volta install node 11.7.0
+volta install node@12.1.0
 ```
 
 You don't need to specify a precise version, in which case Volta will choose a suitable version to match your request:
 
 ```sh
-volta install node 11
+volta install node@12
 ```
 
 You can also specify `latest`—or even leave off the version entirely, and Volta will choose the latest available version:
@@ -66,8 +66,8 @@ Volta allows a team or community of collaborators to standardize on the developm
 The `volta pin` command allows you to choose your Node engine and package manager versions for a project:
 
 ```sh
-volta pin node 10.3
-volta pin yarn 1.14
+volta pin node@10.3
+volta pin yarn@1.14
 ```
 
 Volta stores this in your `package.json` so you can commit your choice of tools to version control:

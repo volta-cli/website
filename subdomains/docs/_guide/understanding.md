@@ -40,8 +40,6 @@ Similarly, you can choose versions of the npm and Yarn package managers with `vo
 
 ### Installing package binaries
 
-{% include warn.html content="This feature is in development." %}
-
 With `volta install`, you can also install command-line tools that are distributed via npm packages. For example, the [`vuepress`](https://www.npmjs.com/package/vuepress) package includes an executable of the same name:
 
 ```sh

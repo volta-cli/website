@@ -49,8 +49,6 @@ volta install surge
 surge -h
 ```
 
-{% include warn.html content="Installing package binaries is still a work in progress." %}
-
 ## How does it work?
 
 Volta does not use any fancy OS features or shell-specific hooks. It's built on the simple, proven approach of shims.

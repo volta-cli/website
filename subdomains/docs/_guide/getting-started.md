@@ -22,4 +22,4 @@ To configure other shells to use Volta, edit your console startup scripts to:
 
 ## Windows Installation
 
-{% include warn.html content="A Windows installer is in development." %}
+For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.

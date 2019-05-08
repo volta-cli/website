@@ -1,0 +1,25 @@
+{
+  "name": "example-versions",
+  "version": "0.1.0",
+  "description": "script to look up recent versions of tools for the examples in the docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-cli/website.git"
+  },
+  "author": "Dave Herman <david.herman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volta-cli/website/issues"
+  },
+  "homepage": "https://github.com/volta-cli/website#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "semver": "^6.0.0"
+  }
+}

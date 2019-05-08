@@ -6,3 +6,4 @@ theme/Gemfile.lock
 subdomains/*/.jekyll-metadata
 subdomains/*/.sass-cache
 subdomains/*/_site
+**/node_modules

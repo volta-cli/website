@@ -29,7 +29,7 @@ With Volta, you can select a Node engine once and then stop worrying about it. Y
 
 Fetch and use a particular version of Node:
 ```sh
-volta install node@12
+volta install node@{{ site.data.versions.node.stable.major }}
 ```
 You should notice right away how responsive the tool is. Your development time is precious! JavaScript developers deserve snappy tools. 🙂
 
@@ -37,7 +37,7 @@ You should notice right away how responsive the tool is. Your development time i
 
 Volta lets you choose your Node engine and package manager for a project once with one command:
 ```
-volta pin node@10
+volta pin node@{{ site.data.versions.node.recent.major }}
 ```
 Volta saves the exact version of the Node engine in your `package.json` so you can commit your selection to git. From that point on, every time you run Node inside your project directory, Volta automatically switches to that same version of Node you chose. Similarly, all your collaborators can do the same by installing Volta on their development machine.
 

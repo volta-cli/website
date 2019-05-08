@@ -19,13 +19,13 @@ When you install a tool to your toolchain, you always choose a _default version_
 For example, you can select your default version of `node` by installing a particular version:
 
 ```sh
-volta install node@12.1.0
+volta install node@{{ site.data.versions.node.stable.full }}
 ```
 
 You don't need to specify a precise version, in which case Volta will choose a suitable version to match your request:
 
 ```sh
-volta install node@12
+volta install node@{{ site.data.versions.node.stable.major }}
 ```
 
 You can also specify `latest`—or even leave off the version entirely, and Volta will choose the latest available version:
@@ -64,24 +64,24 @@ Volta allows a team or community of collaborators to standardize on the developm
 The `volta pin` command allows you to choose your Node engine and package manager versions for a project:
 
 ```sh
-volta pin node@10.3
-volta pin yarn@1.14
+volta pin node@{{ site.data.versions.node.recent.partial }}
+volta pin yarn@{{ site.data.versions.yarn.recent.partial }}
 ```
 
 Volta stores this in your `package.json` so you can commit your choice of tools to version control:
 
 ```javascript
 "toolchain": {
-  "node": "10.3.0",
-  "yarn": "1.14.0"
+  "node": "{{ site.data.versions.node.recent.full }}",
+  "yarn": "{{ site.data.versions.yarn.recent.full }}"
 }
 ```
 
 This way, everyone who uses Volta to work on the project automatically gets the same version you selected.
 
 ```sh
-node --version # 10.3.0
-yarn --version # 1.14.0
+node --version # {{ site.data.versions.node.recent.full }}
+yarn --version # {{ site.data.versions.yarn.recent.full }}
 ```
 
 ### Using project tools
@@ -97,11 +97,11 @@ volta install typescript
 This will add the `tsc` executable to your toolchain, and depending on the project you're in, this executable will switch to the project's chosen version of TypeScript:
 
 ```sh
-cd /path/to/project-using-typescript-2.9.2
-tsc --version # 2.9.2
+cd /path/to/project-using-typescript-{{ site.data.versions.typescript.recent.full }}
+tsc --version # {{ site.data.versions.typescript.recent.full }}
 
-cd /path/to/project-using-typescript-3.3.1
-tsc --version # 3.3.1
+cd /path/to/project-using-typescript-{{ site.data.versions.typescript.stable.full }}
+tsc --version # {{ site.data.versions.typescript.stable.full }}
 ```
 
 ### Safety _and_ convenience

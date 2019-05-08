@@ -1,0 +1,27 @@
+{
+    "node": {
+        "stable": {
+            "major": "12",
+            "full": "12.2.0"
+        },
+        "recent": {
+            "major": "10",
+            "partial": "10.3",
+            "full": "12.2.0"
+        }
+    },
+    "yarn": {
+        "recent": {
+            "partial": "1.14",
+            "full": "1.14.0"
+        }
+    },
+    "typescript": {
+        "stable": {
+            "full": "3.4.5"
+        },
+        "recent": {
+            "full": "2.9.2"
+        }
+    }
+}

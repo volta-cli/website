@@ -1,27 +1,35 @@
 {
-    "node": {
-        "stable": {
-            "major": "12",
-            "full": "12.2.0"
-        },
-        "recent": {
-            "major": "10",
-            "partial": "10.3",
-            "full": "10.3.0"
-        }
+  "node": {
+    "stable": {
+      "major": 12,
+      "full": "12.2.0"
     },
-    "yarn": {
-        "recent": {
-            "partial": "1.14",
-            "full": "1.14.0"
-        }
-    },
-    "typescript": {
-        "stable": {
-            "full": "3.4.5"
-        },
-        "recent": {
-            "full": "2.9.2"
-        }
+    "recent": {
+      "major": 10,
+      "partial": "10.15",
+      "full": "10.15.3"
     }
+  },
+  "typescript": {
+    "stable": {
+      "major": 3,
+      "full": "3.4.5"
+    },
+    "recent": {
+      "major": 2,
+      "partial": "2.9",
+      "full": "2.9.2"
+    }
+  },
+  "yarn": {
+    "stable": {
+      "major": 1,
+      "full": "1.16.0"
+    },
+    "recent": {
+      "major": 1,
+      "partial": "1.14",
+      "full": "1.14.0"
+    }
+  }
 }

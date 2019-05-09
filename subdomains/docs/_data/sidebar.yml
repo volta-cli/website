@@ -39,9 +39,6 @@
     - id: pin
       url: /reference/pin/
       title: volta pin
-    - id: current
-      url: /reference/current/
-      title: volta current
     - id: help
       url: /reference/help/
       title: volta help

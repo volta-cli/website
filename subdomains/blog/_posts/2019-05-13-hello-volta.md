@@ -15,7 +15,7 @@ Volta 0.5.0 is out, with lots of new features and improvements, including:
 - Safe, fast management of npm-distributed binaries!
 - Idiomatic version syntax (e.g. `typescript@3.4`)
 
-**Compatibility note for Notion users:** The `package.json` key for pinned tools is now called `"volta"`. You'll need to rename the `"toolchain"` key to `"volta"` in any existing pinned packages.
+**Compatibility note for Notion users:** The `package.json` key for pinned tools is now called `"volta"`. You'll need to rename the `"toolchain"` key to `"volta"` in any existing pinned projects.
 
 About the name: Notion started as a Node version manager (hence the “No—” alliteration). Since then, two things happened: first, a number of people brought to our attention the Notion productivity tool, and we decided the polite thing to do would be to rename. Second, since the project has grown in scope to let you [manage arbitrary JavaScript tools](https://docs.volta.sh/guide/understanding#installing-package-binaries), we figured it was a good opportunity to rethink the name anyway!
 

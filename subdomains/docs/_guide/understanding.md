@@ -71,7 +71,7 @@ volta pin yarn@{{ site.data.versions.yarn.recent.partial }}
 Volta stores this in your `package.json` so you can commit your choice of tools to version control:
 
 ```javascript
-"toolchain": {
+"volta": {
   "node": "{{ site.data.versions.node.recent.full }}",
   "yarn": "{{ site.data.versions.yarn.recent.full }}"
 }

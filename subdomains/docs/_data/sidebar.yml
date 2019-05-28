@@ -42,16 +42,20 @@
     - id: help
       url: /reference/help/
       title: volta help
-# - id: advanced
-#   url: /advanced/
-#   title: Advanced
-#   docs:
-#     - id: index
-#       url: /advanced/
-#       title: Advanced Usage
-#     - id: hooks
-#       url: /advanced/hooks/
-#       title: Hooks
+- id: advanced
+  url: /advanced/
+  title: Advanced
+  docs:
+    - id: hooks
+      url: /advanced/hooks/
+      title: Hooks
+      sub-headers:
+        - id: where-to-specify-hooks
+          title: Where to specify hooks
+        - id: hooks-file-format
+          title: Hooks file format
+        - id: hook-types
+          title: Hook types
 - id: contributing
   url: /contributing/
   title: Contributing

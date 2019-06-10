@@ -72,7 +72,7 @@ If you use Visual Studio Code with the official Rust plugin, you can configure y
 
 ## Debugging
 
-When developing, we suggest you set the `VOLTA_DEV` environment variable to 1 and the `RUST_BACKTRACE` environment variable to `full`. This will provide extra diagnostic information to stderr on crashes. We have an [issue on file](https://github.com/volta-cli/volta/issues/215) to improve the quality of diagnostics.
+When developing, we suggest you set the `VOLTA_LOGLEVEL` environment variable to `debug` and the `RUST_BACKTRACE` environment variable to `full`. This will provide extra diagnostic information to stderr on crashes. We have an [issue on file](https://github.com/volta-cli/volta/issues/215) to improve the quality of diagnostics.
 
 ## Tests
 

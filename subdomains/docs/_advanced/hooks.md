@@ -76,6 +76,6 @@ Using the `node.distro` hook from the example above, when fetching `node@10.15.3
 
 ### `bin` Hooks
 
-The `bin` hook is an all-purpose hook that will call out to an external script to determine the URL. The value is a path to an executable script that will be called, and the URL will be read from the `stdout` of that script. For `distro` action hooks, the requested version of the tool will be passed as the first argument to that script.
+The `bin` hook is an all-purpose hook that will call out to an external script to determine the URL. The value is a path to an executable script that will be called, and the URL will be read from the `stdout` of that script. The `stderr` of the script will be shown to the user, so it can be used to show progress bars or waiting spinners if desired. If the path to the script is relative (i.e. it begins with a `.`), then it will be resolved relative to the `hooks.json` file in which it is specified. Lastly, for `distro` action hooks, the requested version of the tool will be passed as the first argument to that script.
 
 Using the `yarn.distro` hook from the example `hooks.json`, when fetching `yarn@1.13.0`, Volta will call `~/yarn-distro "1.13.0"` and attempt to download the tarball from the URL that is returned by that hook.

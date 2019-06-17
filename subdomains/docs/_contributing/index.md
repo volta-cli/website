@@ -37,17 +37,13 @@ cargo build
 To install a locally built copy of Volta, you can use the helper scripts provided in the `dev` directory:
 
 ```sh
-cargo build
-./dev/unix/build.sh debug
-./dev/unix/install.sh
+./dev/unix/volta-install.sh --dev
 ```
 
-Or:
+Or to build and install release binaries:
 
 ```sh
-cargo build --release
-./dev/unix/build.sh
-./dev/unix/install.sh
+./dev/unix/volta-install.sh --release
 ```
 
 ### Formatting

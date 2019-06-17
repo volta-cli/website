@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Global installs done right"
-date:   2019-06-17 12:30:00 -0700
+date:   2019-06-18 08:00:00 -0700
 categories: update
 author: Chuck Pierce and Dave Herman
 excerpt_separator: <!--more-->

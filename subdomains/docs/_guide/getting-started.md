@@ -19,3 +19,5 @@ For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and
 ## Windows Installation
 
 For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.
+
+{% include note.html content="Volta's functionality depends on creating symlinks, so you must have <a href=\"https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development#accessing-settings-for-developers\" target=\"_blank\" noreferrer noopener>Developer Mode</a> enabled or be running with elevated privileges (not recommended)" %}

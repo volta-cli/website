@@ -94,7 +94,11 @@ For example, you can install the TypeScript compiler through Volta:
 volta install typescript
 ```
 
-This will add the `tsc` executable to your toolchain, and depending on the project you're in, this executable will switch to the project's chosen version of TypeScript:
+This will add the `tsc` executable to your toolchain.
+
+{% include note.html content="Installing package binaries requires Node to be available on your system" %}
+
+Depending on the project you're in, this executable will switch to the project's chosen version of TypeScript:
 
 ```sh
 cd /path/to/project-using-typescript-{{ site.data.versions.typescript.recent.full }}

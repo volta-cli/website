@@ -28,7 +28,7 @@ You don't need to specify a precise version, in which case Volta will choose a s
 volta install node@{{ site.data.versions.node.stable.major }}
 ```
 
-You can also specify `latest`—or even leave off the version entirely, and Volta will choose the latest available version:
+You can also specify `latest`—or even leave off the version entirely, and Volta will choose the latest LTS release:
 
 ```sh
 volta install node

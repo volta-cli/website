@@ -36,6 +36,9 @@
     - id: install
       url: /reference/install/
       title: volta install
+    - id: list
+      url: /reference/list/
+      title: volta list
     - id: pin
       url: /reference/pin/
       title: volta pin

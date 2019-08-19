@@ -7,24 +7,35 @@ title: Volta Commands
 This is the command reference for the `volta` command-line binary, which has the following syntax:
 
 ```
-Volta: The JavaScript Launcher ⚡
+The JavaScript Launcher ⚡
 
-Usage:
-    volta [-v | --verbose] [<command> <args> ...]
-    volta -h | --help
-    volta --version
+    To install a tool in your toolchain, use `volta install`.
+    To pin your project's runtime or package manager, use `volta pin`.
 
-Options:
-    -h, --help     Display this message
-    -v, --version  Print version info and exit
-        --verbose  Use verbose output
+USAGE:
+    volta [FLAGS] [SUBCOMMAND]
 
-Some common Volta commands are:
-    fetch          Fetch a tool to the local machine
-    install        Install a tool in the user toolchain
-    pin            Select a tool for the current project's toolchain
-    current        Display the currently activated Node version
-    help           Display this message
+FLAGS:
+        --verbose    
+            Enables verbose diagnostics
 
-See 'volta help <command>' for more information on a specific command.
+        --quiet      
+            Prevents unnecessary output
+
+    -v, --version    
+            Prints the current version of Volta
+
+    -h, --help       
+            Prints help information
+
+
+SUBCOMMANDS:
+    fetch          Fetches a tool to the local machine
+    install        Installs a tool in your toolchain
+    uninstall      Uninstalls a tool from your toolchain
+    pin            Pins your project's runtime or package manager
+    list           Displays the current toolchain
+    completions    Generates Volta completions
+    which          Locates the actual binary that will be called by Volta
+    help           Prints this message or the help of the given subcommand(s)
 ```

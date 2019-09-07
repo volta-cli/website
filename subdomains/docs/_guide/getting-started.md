@@ -13,7 +13,7 @@ curl https://get.volta.sh | bash
 ```
 
 For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and [fish](http://fishshell.com/), this installer will automatically update your console startup script. To configure other shells to use Volta, edit your console startup scripts to:
-- Set the `VOLTA_HOME` variable to `~/.volta`
+- Set the `VOLTA_HOME` variable to `$HOME/.volta`
 - Add `$VOLTA_HOME/bin` to the beginning of your `PATH` variable
 
 ## Windows Installation

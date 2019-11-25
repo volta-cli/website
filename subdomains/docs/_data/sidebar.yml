@@ -59,6 +59,14 @@
           title: Hooks file format
         - id: hook-types
           title: Hook types
+    - id: packages
+      url: /advanced/packages
+      title: Package Binaries
+      sub-headers:
+        - id: customizing-download-locations
+          title: Customizing Download Locations
+        - id: pinned-node-version
+          title: Pinned Node Version
 - id: contributing
   url: /contributing/
   title: Contributing

@@ -53,7 +53,7 @@ echo '# Hello world' > README.md
 vuepress dev
 ```
 
-When you install a package to your toolchain, Volta selects a Node engine for the tool based on the [`"engines"`](https://docs.npmjs.com/files/package.json#engines) field in that package's `package.json` manifest and _pins_ the tool to that engine. (If the package doesn't specify this field, Volta uses your current default Node engine instead.) Volta won't change the tool's pinned engine unless you update the tool, no matter what. This way, you can be confident that your installed tools don't change behind your back.
+When you install a package to your toolchain, Volta selects a Node engine for the tool based on the [`"engines"`](https://docs.npmjs.com/files/package.json#engines) field in that package's `package.json` manifest and _pins_ the tool to that engine (see [Package Binaries](/advanced/packages#pinned-node-version) for more information). Volta won't change the tool's pinned engine unless you update the tool, no matter what. This way, you can be confident that your installed tools don't change behind your back.
 
 ## Managing your project
 

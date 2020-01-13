@@ -67,6 +67,16 @@
           title: Customizing Download Locations
         - id: pinned-node-version
           title: Pinned Node Version
+    - id: installers
+      url: /advanced/installers
+      title: Installers
+      sub-headers:
+        - id: current-installers
+          title: Current Installers
+        - id: custom-installers
+          title: Custom Installers
+        - id: installing-old-versions
+          title: Installing Old Versions
 - id: contributing
   url: /contributing/
   title: Contributing

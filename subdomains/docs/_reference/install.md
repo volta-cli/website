@@ -4,18 +4,19 @@ title: volta install
 
 # `volta install`
 
-The `volta install` command has the following synax:
+The `volta install` command will set your default version of a tool. It will also fetch that tool if it isn't already cached locally. It has the following synax:
 
 ```
-Install a tool in the user toolchain
+Installs a tool in your toolchain
 
-Usage:
-    volta install <tool>[@<version>]
-    volta install -h | --help
+USAGE:
+    volta install [FLAGS] <tool[@version]>...
 
-Options:
-    -h, --help     Display this message
+FLAGS:
+        --verbose    Enables verbose diagnostics
+        --quiet      Prevents unnecessary output
+    -h, --help       Prints help information
 
-Supported Tools:
-    Currently Volta supports installing `node` and `yarn` - support for more tools is coming soon!
+ARGS:
+    <tool[@version]>...    Tools to install, like `node`, `yarn@latest` or `your-package@^14.4.3`.
 ```

@@ -42,6 +42,9 @@
     - id: pin
       url: /reference/pin/
       title: volta pin
+    - id: setup
+      url: /reference/setup/
+      title: volta setup
     - id: help
       url: /reference/help/
       title: volta help
@@ -73,10 +76,12 @@
       sub-headers:
         - id: current-installers
           title: Current Installers
-        - id: custom-installers
-          title: Custom Installers
+        - id: skipping-volta-setup
+          title: Skipping Volta Setup
         - id: installing-old-versions
           title: Installing Old Versions
+        - id: custom-installers
+          title: Custom Installers
 - id: contributing
   url: /contributing/
   title: Contributing

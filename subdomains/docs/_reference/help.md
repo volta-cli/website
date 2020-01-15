@@ -7,12 +7,11 @@ title: volta help
 The `volta help` command has the following synax:
 
 ```
-Get some help with a volta command
+Prints this message or the help of the given subcommand(s)
 
-Usage:
-    volta help [<command>]
-    volta help -h | --help
+USAGE:
+    volta help [subcommand]...
 
-Options:
-    -h, --help     Display this message
+ARGS:
+    <subcommand>...    The subcommand whose help message to display
 ```

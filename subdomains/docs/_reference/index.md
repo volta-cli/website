@@ -37,5 +37,6 @@ SUBCOMMANDS:
     list           Displays the current toolchain
     completions    Generates Volta completions
     which          Locates the actual binary that will be called by Volta
+    setup          Enables Volta for the current user / shell
     help           Prints this message or the help of the given subcommand(s)
 ```

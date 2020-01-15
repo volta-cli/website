@@ -34,7 +34,7 @@ If you wish to run the installer but do not want your profile scripts modified b
 curl https://get.volta.sh | bash -s -- --skip-setup
 ```
 
-{% include note.html content="We don't currently support skipping <code>volta setup</code> on Windows" %}
+{% include note.html content="We don't currently support skipping <code>volta setup</code> on Windows." %}
 
 ## Installing Old Versions
 
@@ -46,7 +46,7 @@ curl https://raw.githubusercontent.com/volta-cli/volta/e0290c2d7b0e80bf64e7c5d40
 
 For Windows, you can download and install the Installer `.msi` file for the specific version that you want to install.
 
-{% include note.html content="Volta does not support downgrading, so in order to downgrade you will need to completely uninstall Volta and then install the lower version" %}
+{% include note.html content="Volta does not support downgrading, so in order to downgrade you will need to completely uninstall Volta and then install the lower version." %}
 
 ## Custom Installers
 

@@ -403,9 +403,13 @@ footer {
       }
 
       a {
-        color: white; //$dark-text-color;
-        text-decoration: underline;
-        text-decoration-style: dotted;
+        color: white;
+      }
+
+      a.contributors {
+        // Less buggy than dotted underline in Chrome:
+        // https://stackoverflow.com/questions/50007283/dotted-underlines-dont-render-properly-in-chrome
+        border-bottom: dotted 1px white;
       }
 
       .social {

@@ -5,7 +5,7 @@
 layout: blog
 ---
 
-<h1 class="blog-title">News and Updates</h1>
+<h1 class="blog-title">The Volta Blog</h1>
 
 {% for post in site.posts %}
 

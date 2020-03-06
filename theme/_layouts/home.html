@@ -7,7 +7,7 @@ layout: default
 <div class="page-contents">
     <div class="hero">
         <div class="launch-wrapper">
-            <h1>Volta</h1>
+            <h1></h1>
             <p class="description">{{ page.tagline }}</p>
         </div>
         <p class="action"><a class="nav-link action-button" href="{{ page.start }}">Get Started &rarr;</a></p>
@@ -17,7 +17,7 @@ layout: default
         {% for feature in page.features %}
         <div class="feature">
             <h2>{{ feature.title }}</h2>
-            <p>{{ feature.description }}</p>
+            <p>{{ feature.description | markdownify }}</p>
         </div>
         {% endfor %}
     </div>

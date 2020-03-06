@@ -4,6 +4,7 @@ $color-primary-light: #79bac1;
 $color-primary-very-light: lighten( $color-primary-light, 30% );
 $color-primary-very-dark: darken( $color-primary, 30% );
 $color-primary-dark: darken( $color-primary, 5% );
+$color-primary-background: hsl(185.8, 55.7%, 33%);
 $color-secondary: #edcf3a;
 $color-secondary-dark: darken( $color-secondary, 20% );
 $color-subtle-border: #eaecef;

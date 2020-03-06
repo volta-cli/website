@@ -100,7 +100,7 @@ header {
               line-height: 1.4rem;
               display: inline-block;
               margin-bottom: -2px;
-              border-bottom: 2px solid $color-secondary;
+              border-bottom: 2px solid $color-primary-background;
             }
           }
         }
@@ -177,7 +177,7 @@ main.home {
       display: inline-block;
       font-size: 1.2rem;
       color: #fff;
-      background-color: $color-primary-light;
+      background-color: $color-primary-background;
       padding: 0.8rem 1.6rem;
       border-radius: 4px;
       transition: background-color .1s ease;
@@ -206,7 +206,7 @@ main.home {
 
     code {
       font-size: 90%;
-      color: $color-primary;
+      color: $color-primary-dark;
     }
   }
 
@@ -380,10 +380,10 @@ main.home .page-contents {
 footer {
     margin-top: 4rem;
     padding: 5rem 2.5rem;
-    background: $color-primary-very-light;
-    border-top: 1px solid darken($color-subtle-border, 10%);
+    background: $color-primary-background;
+    border-top: 1px dotted $color-primary-very-dark;
     text-align: center;
-    color: $dark-text-color;
+    color: white;
 
     .footer-contents {
       display: flex;
@@ -393,14 +393,13 @@ footer {
       justify-content: space-between;
 
       .colorful-heart {
-        color: #c00000;
+        color: $color-secondary;
       }
 
       a {
-        color: $dark-text-color;
-        &:hover {
-          text-decoration: underline;
-        }
+        color: white; //$dark-text-color;
+        text-decoration: underline;
+        text-decoration-style: dotted;
       }
 
       .social {
@@ -408,7 +407,6 @@ footer {
         img {
           width: 40px;
           height: 40px;
-          filter: invert(100%);
           padding: 4px;
         }
       }
@@ -417,6 +415,10 @@ footer {
         padding-top: 0.5em;
         .sponsor  {
           padding: 0.25em 0;
+          .linkedin-logo {
+            // Make up for the 9px registered trademark symbol on the right.
+            padding-left: 9px;
+          }
         }
       }
     }
@@ -604,7 +606,7 @@ h1.blog-excerpt-title, h1.post-title {
     width: 100%;
     transition: 0.2s all;
     &:hover {
-      color: $color-secondary;
+      color: $color-primary-background;
     }
 
     &:not(.active):hover {

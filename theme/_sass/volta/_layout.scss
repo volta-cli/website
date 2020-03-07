@@ -453,12 +453,15 @@ footer {
 
 @media (max-width: $media-mobile) {
   footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     .footer-contents {
       margin: 0;
       flex-direction: column;
 
       .community-container {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
       }
 
       .community-container, .sponsor-container {

@@ -331,10 +331,6 @@ main.home {
   }
 }
 
-main.home .page-contents {
-  max-width: 960px;
-}
-
 @media (max-width: $media-mobile) {
   .page-contents {
     padding: {
@@ -438,7 +434,8 @@ footer {
 @media (min-width: $media-min-wide) {
   footer {
     .footer-contents {
-      margin: 0 4rem;
+      margin: 0 auto;
+      max-width: $content-width;
     }
 
     .community-container {
@@ -446,7 +443,7 @@ footer {
     }
 
     .sponsor-container {
-      flex-basis: 200px;
+      flex-basis: auto;
     }
   }  
 }

@@ -3,7 +3,9 @@ layout: post
 title:  "State of the Notion"
 date:   2018-08-20 10:32:05 -0700
 categories: update
-author: Dave Herman
+author: 
+    name: Dave Herman
+    twitter: littlecalculist
 ---
 _Notion is a **JavaScript toolchain manager**, making sure you always get the right version of Node, package managers like npm and Yarn, and JS command-line tools. Best of all, Notion makes tool requirements **declarative and reproducible** by using_ `package.json` _to remember and launch the right versions of a project’s required tools, so developers and users always see their projects build and run in a consistent environment._
 

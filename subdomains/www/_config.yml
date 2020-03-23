@@ -13,21 +13,70 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Volta - Start your engines.
 email: david.herman@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Volta: Start your engines.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 subdomain: www
+
+# Social sharing settings
+# These are the settings used by jekyll-seo-tag to construct open graph,
+# twitter summary card and JSON-LD site and post metadata
+# Docs: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+##########################################################################
+# Your site's title (e.g., Ben's awesome site, The GitHub Blog, etc.) 
+# used as part of the title tag like 'page.title | title'.
+title: Volta
+# A short description (e.g., A blog dedicated to reviewing cat gifs), 
+# used as part of the title tag of the home page like 'title | tagline'.
+tagline: Start your engines.
+# A longer description used for the description meta tag. 
+# Also used as fallback for pages that don't provide their own description and 
+# as part of the home page title tag if tagline is not defined.
+description: "Volta: Start your engines."
+# The full URL to your site. Note: site.github.url will be used by default.
+# the base hostname & protocol for your site, e.g. http://example.com
+url: https://volta.sh
+# Global author information
+author: ~
+# The following properties are available:
+#   twitter:card - The site's default card type
+#   twitter:username - The site's Twitter handle. 
+twitter:
+  username: usevolta
+  card: summary
+# The following properties are available:
+#   facebook:app_id - a Facebook app ID for Facebook insights
+#   facebook:publisher - a Facebook page URL or ID of the publishing entity
+#   facebook:admins - a Facebook user ID for domain insights linked to a personal account
+facebook:
+  app_id: ~
+  publisher: ~
+  admins: ~
+# URL to a site-wide logo (e.g., /assets/your-company-logo.png)
+logo: https://volta.sh/assets/wordmark.jpg
+# For specifying social profiles. The following properties are available:
+#   name - If the user or organization name differs from the site's name
+#   links - An array of links to social media profiles.
+social:
+  links:
+    - https://twitter.com/usevolta
+    - https://discord.gg/hgPTz9A
+    - https://github.com/volta-cli/volta
+# Verify ownership with several services at once using the following format:
+webmaster_verifications:
+  google: ~
+  bing: ~
+  alexa: ~
+  yandex: ~
+  baidu: ~
+# The locale these tags are marked up in. Of the format language_TERRITORY.
+lang: en_US
 
 # Build settings
 markdown: kramdown
 theme: volta-jekyll-theme
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

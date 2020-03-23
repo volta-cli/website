@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/jekyll/jekyll-seo-tag.git
+  revision: 38ef0bea229de85f25b5735c432587c09b494398
+  ref: 38ef0be
+  specs:
+    jekyll-seo-tag (2.6.1)
+      jekyll (>= 3.3, < 5.0)
+
 PATH
   remote: ../../theme
   specs:
@@ -67,6 +75,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
+  jekyll-seo-tag!
   tzinfo-data
   volta-jekyll-theme!
 

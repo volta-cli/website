@@ -6,7 +6,7 @@ layout: default
     <div class="page-contents">
         <h1 class="blog-title">The Volta Blog</h1>
         <h1 class="post-title">{{ page.title }}</h1>
-        <div class="post-date">{{ page.date | date: "%B %-d, %Y" }} &bullet; {{ page.author }}</div>
+        <div class="post-date">{{ page.date | date: "%B %-d, %Y" }} &bullet; {{ page.author.name }}</div>
         <div class="post-contents">
             {{ content }}
         </div>

@@ -3,12 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    {% if site.subdomain == "www" %}
-    <title>Volta - {{ page.tagline | escape }}</title>
-    {% else %}
-    <title>{% if page.title %}{{ page.title | escape }} | Volta{% else %}{{ site.title | escape }}{% endif %}</title>
-    {% endif %}
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    {% seo %}
   
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:500,700|Ubuntu+Mono" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
@@ -34,5 +29,4 @@
         });
       });
     </script>
-  </head>
-  
+</head>  

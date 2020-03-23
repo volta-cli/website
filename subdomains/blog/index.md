@@ -12,7 +12,7 @@ layout: blog
 <h1 class="blog-excerpt-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
 <div class="blog-excerpt-date">
-    {{ post.date | date: "%B %-d, %Y" }} &bullet; {{ post.author }}
+    {{ post.date | date: "%B %-d, %Y" }} &bullet; {{ post.author.name }}
 </div>
 
 <div class="blog-excerpt">

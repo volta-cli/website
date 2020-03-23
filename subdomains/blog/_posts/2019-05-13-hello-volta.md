@@ -3,7 +3,9 @@ layout: post
 title:  "Hello Volta!"
 date:   2019-05-13 10:07:41 -0700
 categories: update
-author: Chuck Pierce and Dave Herman
+author: 
+    name: Chuck Pierce and Dave Herman
+    twitter: ChuckAPierce
 ---
 
 We’ve got a new version available… and a new name!

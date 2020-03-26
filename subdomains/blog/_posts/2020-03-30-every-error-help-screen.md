@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Volta's Helpful Error Messages"
-date:   2020-03-20 08:00:00 -0700
+title:  "Every Error is a Help Screen in Disguise"
+date:   2020-03-30 08:00:00 -0700
 categories: [errors, delight]
 author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-Nothing is quite so frustrating as a piece of technology giving you an error message that you don’t understand. We’ve all felt that surge of anger like we were a character in _Office Space_, “’PC Load Letter,’ what the $&@# does that mean?!” With Volta, we’re committed to having helpful errors. In fact, **if you ever find yourself frustrated or confused by an error message from Volta, we consider that a bug**, so please file an issue!
+Nothing is quite so frustrating as a piece of technology giving you an error message that you don’t understand. We’ve all felt that surge of anger like we were a character in _Office Space_, “’PC Load Letter,’ what the $&@# does that mean?!” With Volta, we’re committed to having helpful errors. In fact, **if you ever find yourself frustrated or confused by an error message from Volta, we consider that a bug**, so please [file an issue](https://github.com/volta-cli/volta/issues/new)!
 <!--more-->
 
 Early on in the development of Volta, we revamped our error-handling code so that every error in the program is associated with a custom error message. These error messages provide context of what Volta was trying to do when the error occurred and they all provide a call-to-action for what you can do to solve the problem. For example, if you try to run `node` before installing a version of Node, you don’t see a generic `command not found` message, you see this:

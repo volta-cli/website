@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Volta's Helpful Error Messages"
-date:   2020-03-30 08:00:00 -0700
+date:   2020-03-20 08:00:00 -0700
 categories: [errors, delight]
 author: Chuck Pierce
 excerpt_separator: <!--more-->
@@ -12,9 +12,15 @@ Nothing is quite so frustrating as a piece of technology giving you an error mes
 
 Early on in the development of Volta, we revamped our error-handling code so that every error in the program is associated with a custom error message. These error messages provide context of what Volta was trying to do when the error occurred and they all provide a call-to-action for what you can do to solve the problem. For example, if you try to run `node` before installing a version of Node, you don’t see a generic `command not found` message, you see this:
 
-<section style="text-align: center;">
-  <img src="/assets/volta_helpful_error.png" alt="Error message when trying to run node without an installed version." /><br>
-</section>
+<div class="highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code>$ node --version
+<span style="color: #FF6D67; font-weight: bold;">Volta error:</span> Node is not available.
+
+To run any Node command, first set a default version using `volta install node`
+Error details written to ~/.volta/log/volta-error-2020-03-30_08_00_00.log</code></pre>
+  </div>
+</div>
 
 First, we let the user know what happened and why the command didn’t work. Next, we give advice on how to fix the problem. Finally, we provide an error log with more information in case the user needs to dig in deeper. All of our error messages are structured similarly: Context of what the problem is, call-to-action, and additional information.
 

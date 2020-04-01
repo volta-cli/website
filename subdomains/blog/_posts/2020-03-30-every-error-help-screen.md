@@ -3,7 +3,9 @@ layout: post
 title:  "Every Error is a Help Screen in Disguise"
 date:   2020-03-30 08:00:00 -0700
 categories: [errors, delight]
-author: Chuck Pierce
+author: 
+    name: Chuck Pierce
+    twitter: ChuckAPierce
 excerpt_separator: <!--more-->
 ---
 

@@ -6,7 +6,7 @@ title: volta pin
 
 The `volta pin` command will update a project's `package.json` file to use the selected version of a tool.
 
-{% include note.html content="<code>volta pin</code> only works with Node & Yarn. For dependencies, you should use <code>npm install</code> or <code>yarn add</code> to update the selected versions." %}
+{% include note.html content="<code>volta pin</code> only works with Node & Package Managers (e.g. npm or Yarn). For dependencies, you should use <code>npm install</code> or <code>yarn add</code> to update the selected versions." %}
 
 The command has the following syntax:
 

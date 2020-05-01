@@ -17,7 +17,7 @@ On Unix, `volta setup` will search for profile scripts using the following list:
 * `~/.config/fish/config.fish`
 * The value of the `PROFILE` environment variable
 
-For each of these files that exist, `volta setup` will modify it to include lines that define `VOLTA_HOME` and add `$VOLTA_HOME/bin` to the `PATH` environment variable.
+For each of these files that exist, `volta setup` will modify it to include lines that define `VOLTA_HOME` and add `$VOLTA_HOME/bin` to the `PATH` environment variable. If the configuration file for your current shell (detected using the `$SHELL` environment variable) doesn't exist, it will be created with the appropriate contents, if possible.
 
 ## Windows
 

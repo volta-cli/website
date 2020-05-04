@@ -42,6 +42,9 @@
     - id: pin
       url: /reference/pin/
       title: volta pin
+    - id: run
+      url: /reference/run/
+      title: volta run
     - id: setup
       url: /reference/setup/
       title: volta setup

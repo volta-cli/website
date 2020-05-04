@@ -6,8 +6,6 @@ title: volta list
 
 The `volta list` command allows you to inspect your installed Node runtimes, package managers, and packages with binaries.
 
-{% include warn.html content="The <code>--format=human</code> syntax is not yet supported!" %}
-
 The command has the following syntax:
 
 ```

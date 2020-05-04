@@ -15,7 +15,7 @@ Hooks are always set in a file named `hooks.json`. This file can be in one of tw
 
 ## Hooks file format
 
-The contents of `hooks.json` must be an object, with optional keys for each type of tool (currently `node`, `yarn`, and `packages`). Each tool has 3 actions that can each have a hook applied to them:
+The contents of `hooks.json` must be an object, with optional keys for each type of tool (currently `node`, `npm`, `yarn`, and `packages`). Each tool has 3 actions that can each have a hook applied to them:
 
 * `index` Represents the URL used to determine the list of versions that are available to download for that tool. The response when accessing that URL must match the format of the public indexes for the selected tool.
 * `latest` Represents the URL used to determine the latest version of that tool. For `node` and `package`, the response should be in the same format as `index`, making sure that the latest version is the first element in the list. For `yarn`, the response should be the raw version number string and nothing else.
@@ -36,9 +36,20 @@ Finally, each action has 3 possible hooks (described below) that can be used (on
             "template": "http://example.com/{% raw %}{{os}}{% endraw %}/{% raw %}{{arch}}{% endraw %}/node-{% raw %}{{version}}{% endraw %}.tar.gz"
         }
     },
+    "npm": {
+        "index": {
+            "prefix": "http://example.com/npm/"
+        },
+        "latest": {
+            "bin": "~/npm-latest"
+        },
+        "distro": {
+            "template": "http://example.com/npm/npm-{% raw %}{{version}}{% endraw %}.tgz"
+        }
+    },
     "yarn": {
         "index": {
-            "template": "http://example.com/yarn/{% raw %}{{os}}{% endraw %}/{% raw %}{{arch}}{% endraw %}"
+            "template": "http://example.com/yarn/{% raw %}{{os}}{% endraw %}/{% raw %}{{arch}}{% endraw %}/yarn-{% raw %}{{version}}{% endraw %}.tgz"
         },
         "latest": {
             "prefix": "http://example.com/yarnpkg/"

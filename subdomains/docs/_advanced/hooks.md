@@ -79,9 +79,13 @@ The `prefix` hook is a straightforward URL replacement. The URL will be built us
 
 The `template` hook allows you to specify the template for a URL, with wildcards that will be replaced. The available wildcards are:
 
-* `{% raw %}{{os}}{% endraw %}` will be replaced by `darwin`, `linux`, or `win`, depending on the operating system
-* `{% raw %}{{arch}}{% endraw %}` will be replaced by `x86` or `x64`, depending on the architecture of the system
+* `{% raw %}{{os}}{% endraw %}` will be replaced by `darwin`, `linux`, or `win`, depending on the operating system.
+* `{% raw %}{{arch}}{% endraw %}` will be replaced by `x86` or `x64`, depending on the architecture of the system.
 * `{% raw %}{{version}}{% endraw %}` (Only available to `distro` actions) will be replaced by the specific version of the tool that Volta is trying to download.
+* `{% raw %}{{filename}}{% endraw %}` will be replaced by the file name of the file that Volta would download from the public registry.
+* `{% raw %}{{ext}}{% endraw %}` (Only available to `distro` actions) will be replaced by the file extension that Volta expects to download.
+
+{% include note.html content="The <code>filename</code> and <code>ext</code> replacements are only available in Volta 0.8.4 or later" %}
 
 Using the `node.distro` hook from the example above, when fetching `node@10.15.3` on a 64-bit Linux system, Volta would attempt to download the tarball from: `http://example.com/linux/x64/node-10.15.3.tar.gz`
 

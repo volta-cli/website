@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Declare Your Tools, Don't Install Them"
-date:   2020-07-17 08:00:00 -0700
+date:   2020-07-23 08:00:00 -0700
 categories: [ux, delight]
 author: Chuck Pierce
 excerpt_separator: <!--more-->

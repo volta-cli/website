@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Bringing the Declarative Experience to Your Tools"
+title:  "Declare Your Tools, Don't Install Them"
 date:   2020-07-17 08:00:00 -0700
 categories: [ux, delight]
 author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-Declarative UI—powered by packages like React, Vue, or Angular—has completely taken over the world. These techniques let you focus on describing how an app should look and feel, without having to micromanage making each change happen imperatively. Despite that, managing the tools you need for development is often stuck in an imperative world. In the same way that modern frameworks made it easier to build declarative UIs, **Volta brings the power of the declarative paradigm to your tools!**
+Declarative UI—powered by packages like React, Vue, or Ember—has completely taken over the world. These techniques let you focus on describing how an app should look and feel, without having to worry about how the page is updated. Despite that, installing the tools you need for development is often stuck in an imperative world. In the same way that modern frameworks take the worry out of updating your UI, **Volta liberates you from worrying about the state of your tools!**
 <!--more-->
 
-Managing your development tools—Node, package managers, and others—is almost always done imperatively: You have to tell the computer to use specific versions and when to switch versions. This makes things complicated and error-prone, especially when you are working in multiple projects that have different tool requirements.
+Installing your development tools—Node, package managers, and others—is almost always done imperatively: You have to tell the computer to use specific versions and when to switch versions. This makes things complicated and error-prone, especially when you are working in multiple projects that have different tool requirements.
 
 - Every time you switch to a new project, you have to remember which tools and versions are needed for the new project and manually switch.
 - For teams, when a decision is made to upgrade to a new version of Node, the entire team needs to be notified.

@@ -18,7 +18,7 @@ Installing your development tools—Node, package managers, and others—is almo
 
 With this model, every time you run a tool, you need to be aware of the context in which you are working to make sure you are running the correct version. By contrast, Volta takes care of picking the correct version of your tools for every context, leaving you free to focus on your work.
 
-- Volta delegates to the correct local versions of global packages when you are working in a project (see [Global Installs Done Right]() for more).
+- Volta delegates to the correct local versions of global packages when you are working in a project (see [Global Installs Done Right](https://blog.volta.sh/2019/06/18/global-installs-done-right/) for more).
 - Node and package manager versions are specified directly in `package.json` and Volta will always use those versions.
 - The shims that power Volta re-evaluate the context on every execution, so whenever those values change, the new versions are immediately reflect in your terminal.
 - If a team decides to update the Node version, they only need to change the value in `package.json` and every member will immediately start using the new version.

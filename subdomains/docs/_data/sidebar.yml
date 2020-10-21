@@ -39,18 +39,21 @@
     - id: uninstall
       url: /reference/uninstall/
       title: volta uninstall
-    - id: list
-      url: /reference/list/
-      title: volta list
     - id: pin
       url: /reference/pin/
       title: volta pin
-    - id: run
-      url: /reference/run/
-      title: volta run
+    - id: list
+      url: /reference/list/
+      title: volta list
+    - id: which
+      url: /reference/which/
+      title: volta which
     - id: setup
       url: /reference/setup/
       title: volta setup
+    - id: run
+      url: /reference/run/
+      title: volta run
     - id: help
       url: /reference/help/
       title: volta help

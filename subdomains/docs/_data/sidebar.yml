@@ -36,18 +36,27 @@
     - id: install
       url: /reference/install/
       title: volta install
-    - id: list
-      url: /reference/list/
-      title: volta list
+    - id: uninstall
+      url: /reference/uninstall/
+      title: volta uninstall
     - id: pin
       url: /reference/pin/
       title: volta pin
-    - id: run
-      url: /reference/run/
-      title: volta run
+    - id: list
+      url: /reference/list/
+      title: volta list
+    - id: completions
+      url: /reference/completions/
+      title: volta completions
+    - id: which
+      url: /reference/which/
+      title: volta which
     - id: setup
       url: /reference/setup/
       title: volta setup
+    - id: run
+      url: /reference/run/
+      title: volta run
     - id: help
       url: /reference/help/
       title: volta help

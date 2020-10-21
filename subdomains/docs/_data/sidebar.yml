@@ -67,6 +67,9 @@
     - id: workspaces
       url: /advanced/workspaces
       title: Workspaces
+    - id: uninstall
+      url: /advanced/uninstall
+      title: Uninstalling Volta
 - id: contributing
   url: /contributing/
   title: Contributing

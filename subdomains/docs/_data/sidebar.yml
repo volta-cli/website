@@ -45,6 +45,9 @@
     - id: list
       url: /reference/list/
       title: volta list
+    - id: completions
+      url: /reference/completions/
+      title: volta completions
     - id: which
       url: /reference/which/
       title: volta which

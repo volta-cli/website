@@ -4,7 +4,7 @@ title: Hooks
 
 # Hooks
 
-By default, Volta fetches Node, Yarn, and package binaries from public sources and registries (https://nodejs.org, https://yarnpkg.com, https://www.npmjs.com). However, depending on your environment, it may be necessary to tell Volta to instead download from a different source (e.g. npm Enterprise for internal tools). To accommodate that, Volta provides hooks into the download process.
+By default, Volta fetches Node, npm, and Yarn from public sources and registries (https://nodejs.org, https://yarnpkg.com, https://www.npmjs.com). However, depending on your environment, it may be necessary to tell Volta to instead download from a different source (e.g. npm Enterprise for internal tools). To accommodate that, Volta provides hooks into the download process.
 
 ## Where to specify hooks
 
@@ -15,11 +15,11 @@ Hooks are always set in a file named `hooks.json`. This file can be in one of tw
 
 ## Hooks file format
 
-The contents of `hooks.json` must be an object, with optional keys for each type of tool (currently `node`, `npm`, `yarn`, and `packages`). Each tool has 3 actions that can each have a hook applied to them:
+The contents of `hooks.json` must be an object, with optional keys for each type of tool (currently `node`, `npm`, and `yarn`). Each tool has 3 actions that can each have a hook applied to them:
 
 * `index` Represents the URL used to determine the list of versions that are available to download for that tool. The response when accessing that URL must match the format of the public indexes for the selected tool.
-* `latest` Represents the URL used to determine the latest version of that tool. For `node` and `package`, the response should be in the same format as `index`, making sure that the latest version is the first element in the list. For `yarn`, the response should be the raw version number string and nothing else.
-* `distro` Represents the URL that is used to download the tool binaries. NOTE: `packages` currently does not support this action.
+* `latest` Represents the URL used to determine the latest version of that tool. For `node`, the response should be in the same format as `index`, making sure that the latest version is the first element in the list. For `yarn`, the response should be the raw version number string and nothing else.
+* `distro` Represents the URL that is used to download the tool binaries.
 
 Finally, each action has 3 possible hooks (described below) that can be used (only one of which can be specified for each action at any time). An example `hooks.json` file is:
 
@@ -56,14 +56,6 @@ Finally, each action has 3 possible hooks (described below) that can be used (on
         },
         "distro": {
             "bin": "~/yarn-distro"
-        }
-    },
-    "packages": {
-        "index": {
-            "prefix": "http://example.com/packages/"
-        },
-        "latest": {
-            "bin": "/usr/local/latest-package"
         }
     }
 }

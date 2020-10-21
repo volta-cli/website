@@ -40,20 +40,13 @@ Similarly, you can choose versions of the npm and Yarn package managers with `vo
 
 ### Installing package binaries
 
-With `volta install`, you can also install command-line tools that are distributed via npm packages. For example, the [`vuepress`](https://www.npmjs.com/package/vuepress) package includes an executable of the same name:
+With Volta, installing a command-line tool globally with your package manager also adds it to your toolchain. For example, the [`vuepress`](https://www.npmjs.com/package/vuepress) package includes an executable of the same name:
 
 ```sh
-volta install vuepress
+yarn global add vuepress
 ```
 
-Once you've installed the package to your toolchain, you can run it by name at your console:
-
-```sh
-echo '# Hello world' > README.md
-vuepress dev
-```
-
-When you install a package to your toolchain, Volta selects a Node engine for the tool based on the [`"engines"`](https://docs.npmjs.com/files/package.json#engines) field in that package's `package.json` manifest and _pins_ the tool to that engine (see [Package Binaries](/advanced/packages#pinned-node-version) for more information). Volta won't change the tool's pinned engine unless you update the tool, no matter what. This way, you can be confident that your installed tools don't change behind your back.
+When you install a package to your toolchain, Volta takes your current default Node version and _pins_ the tool to that engine (see [Package Binaries](/advanced/packages#pinned-node-version) for more information). Volta won't change the tool's pinned engine unless you update the tool, no matter what. This way, you can be confident that your installed tools don't change behind your back.
 
 ## Managing your project
 
@@ -88,15 +81,11 @@ yarn --version # {{ site.data.versions.yarn.recent.full }}
 
 The `node` and package manager executables aren't the only smart tools in your toolchain: the package binaries in your toolchain are also aware of your current directory, and respect the configuration of the project you're in.
 
-For example, you can install the TypeScript compiler through Volta:
+For example, installing the Typescript package will add the compiler executable—`tsc`— to your toolchain:
 
 ```sh
-volta install typescript
+npm install --global typescript
 ```
-
-This will add the `tsc` executable to your toolchain.
-
-{% include note.html content="Installing package binaries requires Node to be available on your system" %}
 
 Depending on the project you're in, this executable will switch to the project's chosen version of TypeScript:
 
@@ -114,8 +103,8 @@ Because Volta's toolchain always keeps track of where you are, it makes sure the
 
 What's more, Volta covers its tracks whenever it runs a tool, making sure your npm or Yarn scripts never see what's in your toolchain.
 
-These two features combined mean that Volta **solves the problem of global packages**. In other words, `volta install` gives you the _convenience_ of global package installations, but without the _danger_.
+These two features combined mean that Volta **solves the problem of global packages**. In other words, Volta gives you the _convenience_ of global package installations, but without the _danger_.
 
-For example, you can safely install TypeScript with `volta install typescript`—and enjoy the convenience of being able to call `tsc` directly from your console—without worrying that your project's package scripts might accidentally depend on the global state of your machine.
+For example, you can safely install TypeScript with `npm i -g typescript`—and enjoy the convenience of being able to call `tsc` directly from your console—without worrying that your project's package scripts might accidentally depend on the global state of your machine.
 
 Enjoy!

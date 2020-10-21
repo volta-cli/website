@@ -45,7 +45,7 @@ Volta saves the exact version of the Node engine in your `package.json` so you c
 
 Volta also lets you install your favorite package binaries as command-line tools, without worrying about them interfering with your development projects. Even better, these tools get pinned to a particular Node engine at installation time and don't change unless you explicitly tell them to. This means that once a tool works, it keeps working.
 ```sh
-volta install surge
+npm install -g surge
 surge -h
 ```
 

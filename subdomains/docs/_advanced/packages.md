@@ -19,8 +19,16 @@ As described in [Understanding Volta](/guide/understanding#installing-package-bi
 * If the package has `engines` specified in `package.json`, use the latest version of Node that meets the requirements in `engines`
 * Otherwise, use the most recent version of Node
 
-### Volta 0.6.8 and beyond
+### Volta 0.6.8 through Volta 0.8.7
 
 * If the package has `engines` specified in `package.json`, use the latest LTS version of Node that meets the requirements
 * If no LTS versions meet the requirements then use the latest overall version that satisfies `engines`
 * If `engines` isn't available, use the most recent LTS version of Node
+
+### Volta 0.9.0 and beyond
+
+Starting with Volta 0.9.0, Volta will pin a package to your current default Node version (at the time the tool was installed). You can change that version by changing your default, or by running the install with `volta run`:
+
+```sh
+volta run --node 15 npm i -g ember-cli
+```

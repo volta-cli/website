@@ -22,7 +22,7 @@ Contribution to Volta is organized under the terms of the [Contributor Covenant 
 
 ### Rust
 
-Volta is intended to compile with [Rust 1.41](https://www.rust-lang.org/) or newer.
+Volta is intended to compile with the latest [stable Rust release](https://www.rust-lang.org/).
 
 ### Building
 

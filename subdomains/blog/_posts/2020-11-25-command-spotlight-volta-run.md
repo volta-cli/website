@@ -7,7 +7,7 @@ author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-Volta is designed to be invisible: You type a command like `npm start`, and Volta automatically detects and runs the right version of npm. While that works great most of the time, occasionally you need direct control over the tool versions that are used. Maybe you are trying to reproduce reported bug or testing how your project works with a different npm version. Whatever the reason, **`volta run` lets you take control of your tool selection right from the command line**.
+Volta is designed to be invisible: You type a command like `npm start`, and Volta automatically detects and runs the right versions of npm and Node. While that works great most of the time, occasionally you need direct control over the tool versions that are used. Maybe you are trying to reproduce a reported bug or testing how your project works with a different npm version. Whatever the reason, `volta run` lets you **take explicit control of tool selection** right from the command line.
 <!--more-->
 
 Let's check out some examples of how you can use `volta run`:
@@ -30,11 +30,16 @@ volta run --node latest --bundled-npm --env NPM_CONFIG_LOGLEVEL=silly npm instal
 
 This will run `npm install` using the latest Node, the npm version bundled with that Node, and with the environment variable `NPM_CONFIG_LOGLEVEL` set to `silly`.
 
-```
-volta run --node 10 --no-yarn ember install ember-concurrency
-```
+You can even use `volta run` inside your CI configuration to test against multiple tool versions. For example, the following GitHub Actions configuration for a job will run `npm test` using every combination of Node 10, 12, & 14 with npm 5, 6, and 7:
 
-Finally, this will run `ember install ember-concurrency` using Node 10 and without Yarn available at all, even if it's set in `package.json`.
+```
+strategy:
+  matrix:
+    node: [10,12,14]
+    npm: [5,6,7]
+steps:
+  - run: volta run --node ${{ matrix.node }} --npm ${{ matrix.npm }} npm test
+```
 
 As is the case with any Volta command, if one of the versions you set at the command line hasn't been seen before, Volta will automatically download it and make it available. No need to install it separately, just tell Volta which version to use and it will make it happen! For more details about the available command-line flags, visit the [documentation](https://docs.volta.sh/reference/run).
 

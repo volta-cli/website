@@ -7,17 +7,10 @@ author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-Volta's context detection is designed to be invisible: You type a command—like `npm start`—and Volta automatically detects and runs the correct version of that command. Sometimes, however, you need to take direct control over the tool versions that are used. Maybe you are trying to reproduce reported bug or testing how your project works with different tool versions. Whatever the reason, **`volta run` lets you run any command while specifying the Node, npm, and Yarn versions right at the command line**
+Volta is designed to be invisible: You type a command like `npm start`, and Volta automatically detects and runs the right version of npm. While that works great most of the time, occasionally you need direct control over the tool versions that are used. Maybe you are trying to reproduce reported bug or testing how your project works with a different npm version. Whatever the reason, **`volta run` lets you take control of your tool selection right from the command line**.
 <!--more-->
 
-[`volta run`](https://docs.volta.sh/reference/run) has a few sets of command-line flags that let you define your tool versions. For any tool that _doesn't_ have a version set in the command line flags, Volta will use its normal context resolution to determine the appropriate version (from `package.json` or your default versions, as needed). The flags that you can set are:
-
-- `--node <version>` controls the Node version for the command. `<version>` here can be an exact version—like `14.15.1`—or a partial version—such as `12`. You can even use `latest` or `lts` to resolve the appropriate Node version.
-- `--npm <version>` and `--bundled-npm` allow you to set the npm version. Just like for Node, `<version>` can be an exact or partial version. `--bundled-npm` tells Volta to ignore any specific `npm` settings in the project or defaults and instead use the version bundled with Node (whichever Node you are using).
-- `--yarn <version>` and `--no-yarn` similarly allow you to set the Yarn version. Since it isn't bundled, `--no-yarn` tells Volta to ignore any settings and omit Yarn from the final environment entirely.
-- `--env NAME=VALUE` lets you set an environment variable for the command as well. This can be set multiple times to set multiple different environment variables.
-
-That's a lot of words, how about some examples?
+Let's check out some examples of how you can use `volta run`:
 
 ```
 volta run --node lts --npm 7 npm start
@@ -37,6 +30,12 @@ volta run --node latest --bundled-npm --env NPM_CONFIG_LOGLEVEL=silly npm instal
 
 This will run `npm install` using the latest Node, the npm version bundled with that Node, and with the environment variable `NPM_CONFIG_LOGLEVEL` set to `silly`.
 
-As is the case with any Volta command, if one of the versions you set at the command line hasn't been seen before, Volta will automatically download it and make it available. No need to install it separately, just tell Volta which version to use and it will make it happen!
+```
+volta run --node 10 --no-yarn ember install ember-concurrency
+```
+
+Finally, this will run `ember install ember-concurrency` using Node 10 and without Yarn available at all, even if it's set in `package.json`.
+
+As is the case with any Volta command, if one of the versions you set at the command line hasn't been seen before, Volta will automatically download it and make it available. No need to install it separately, just tell Volta which version to use and it will make it happen! For more details about the available command-line flags, visit the [documentation](https://docs.volta.sh/reference/run).
 
 Though most of the time Volta's automatic version detection means you don't have to worry about which version of Node or npm is needed, sometimes you need to take over and have full control. In those situations, `volta run` is a powerful tool that lets you tell Volta directly which versions to use for a one-off command.

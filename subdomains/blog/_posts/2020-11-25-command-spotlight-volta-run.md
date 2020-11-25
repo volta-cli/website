@@ -38,9 +38,9 @@ strategy:
     node: [10,12,14]
     npm: [5,6,7]
 steps:
-  - run: volta run --node ${{ matrix.node }} --npm ${{ matrix.npm }} npm test
+  - run: volta run --node {% raw %}${{ matrix.node }}{% endraw %} --npm {% raw %}${{ matrix.npm }}{% endraw %} npm test
 ```
 
-As is the case with any Volta command, if one of the versions you set at the command line hasn't been seen before, Volta will automatically download it and make it available. No need to install it separately, just tell Volta which version to use and it will make it happen! For more details about the available command-line flags, visit the [documentation](https://docs.volta.sh/reference/run).
+As with any Volta command, if one of the versions you set at the command line hasn't been seen before, Volta will automatically download it and make it available. No need to install it separately, just tell Volta which version to use and it will make it happen! For more details about the available command-line flags, visit the [documentation](https://docs.volta.sh/reference/run).
 
-Though most of the time Volta's automatic version detection means you don't have to worry about which version of Node or npm is needed, sometimes you need to take over and have full control. In those situations, `volta run` is a powerful tool that lets you tell Volta directly which versions to use for a one-off command.
+While most of the time Volta's automatic version detection means you don't have to worry about which version of Node or npm is needed, sometimes you need to take over and have full control. In those situations, `volta run` is a powerful tool that lets you tell Volta directly which versions to use for a one-off command.

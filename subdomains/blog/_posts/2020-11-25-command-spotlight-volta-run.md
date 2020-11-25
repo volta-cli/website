@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Command Spotlight: volta run"
-date:   2020-11-23 08:00:00 -0700
+date:   2020-11-25 08:00:00 -0700
 categories: [spotlight, commands]
 author: Chuck Pierce
 excerpt_separator: <!--more-->

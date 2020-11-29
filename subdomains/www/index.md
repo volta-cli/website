@@ -1,6 +1,6 @@
 ---
 layout: home
-tagline: Start your engines.
+tagline: A hassle-free tool to manage your JavaScript command-line tools. Start your engines.
 start: https://docs.volta.sh/guide/getting-started/
 features:
   - title: ⚡ Fast

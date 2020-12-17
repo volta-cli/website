@@ -1,6 +1,6 @@
 ---
 layout: home
-tagline: Start your engines.
+tagline: The Hassle-Free JavaScript Tool Manager
 start: https://docs.volta.sh/guide/getting-started/
 features:
   - title: ⚡ Fast

@@ -7,12 +7,8 @@ author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-The Volta team is thrilled to announce that Volta 1.0.0 is now available! **Volta is a fast, reliable manager for JavaScript tools that takes the hassle out of switching versions**, allowing you to focus on your work, not your tools.
+The Volta team is thrilled to announce that Volta 1.0.0 is now available! Volta is a fast, reliable utility for declaring your JavaScript DevTools as Code. In much the same way that Infrastructure as Code frees teams from manually managing their server infrastructure, **Volta takes the hassle out of defining and coordinating JavaScript tools** so that you can focus on creating awesome software.
 <!--more-->
-
-# Why use a tool manager at all?
-
-If you've never used a Node tool manager before, you might be curious why they're useful. The biggest reason is they make it easy and fast to switch between multiple versions of Node. Even if you don't need to change Node versions, Volta also makes your [global installs smarter](/2019/06/18/global-installs-done-right/) to make sure you're always using the expected version.
 
 # What does 1.0.0 mean for Volta?
 

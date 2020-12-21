@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing Volta 1.0.0"
-date:   2020-12-16 08:00:00 -0700
+date:   2020-12-21 08:00:00 -0700
 categories: update
 author: Chuck Pierce
 excerpt_separator: <!--more-->

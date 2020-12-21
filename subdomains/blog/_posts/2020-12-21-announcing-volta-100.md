@@ -7,7 +7,7 @@ author: Chuck Pierce
 excerpt_separator: <!--more-->
 ---
 
-The Volta team is thrilled to announce that Volta 1.0.0 is now available! Volta is a fast, reliable utility for declaring your JavaScript Toolchains as Code. In much the same way that Infrastructure as Code frees teams from manually managing their server infrastructure, **Volta takes the hassle out of installing and coordinating JavaScript tools**—such as Node, package managers, and package binaries—so that you can focus on creating awesome software.
+The Volta team is thrilled to announce that Volta 1.0.0 is now available! Volta is a fast, reliable utility for declaring your JavaScript [Toolchains as Code](http://calculist.org/blog/2020/12/21/tac/). In much the same way that Infrastructure as Code frees teams from manually managing their server infrastructure, **Volta takes the hassle out of installing and coordinating JavaScript tools**—such as Node, package managers, and package binaries—so that you can focus on creating awesome software.
 <!--more-->
 
 # What does 1.0.0 mean for Volta?

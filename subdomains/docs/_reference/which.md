@@ -4,7 +4,7 @@ title: volta which
 
 # `volta which`
 
-The `volta which` command will unwrap Volta's shims and locate the actual binary that will be launched by Volta. It has the following synax:
+The `volta which` command will unwrap Volta's shims and locate the actual binary that will be launched by Volta. It has the following syntax:
 
 ```
 Locates the actual binary that will be called by Volta

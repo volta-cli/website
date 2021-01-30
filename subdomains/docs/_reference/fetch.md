@@ -4,7 +4,7 @@ title: volta fetch
 
 # `volta fetch`
 
-The `volta fetch` command will allow you to fetch a tool into the local cache, without setting it as a default or making it available, for future offline use. It has the following synax:
+The `volta fetch` command will allow you to fetch a tool into the local cache, without setting it as a default or making it available, for future offline use. It has the following syntax:
 
 ```
 Fetches a tool to the local machine

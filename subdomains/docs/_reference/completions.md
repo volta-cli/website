@@ -4,7 +4,7 @@ title: volta completions
 
 # `volta completions`
 
-The `volta completions` command will generate command completion information for your shell. It has the following synax:
+The `volta completions` command will generate command completion information for your shell. It has the following syntax:
 
 ```
 Generates Volta completions

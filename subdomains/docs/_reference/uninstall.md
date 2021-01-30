@@ -8,7 +8,7 @@ The `volta uninstall` command allows you to remove any global package that has b
 
 {% include note.html content="As of Volta 0.9.0, you can also uninstall a package using your package manager with <code>npm uninstall --global</code> or <code>yarn global remove</code>" %}
 
-The command has the following synax:
+The command has the following syntax:
 
 ```
 Uninstalls a tool from your toolchain

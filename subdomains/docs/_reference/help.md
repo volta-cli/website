@@ -4,7 +4,7 @@ title: volta help
 
 # `volta help`
 
-The `volta help` command has the following synax:
+The `volta help` command has the following syntax:
 
 ```
 Prints this message or the help of the given subcommand(s)

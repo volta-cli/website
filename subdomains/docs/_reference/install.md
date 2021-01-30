@@ -4,7 +4,7 @@ title: volta install
 
 # `volta install`
 
-The `volta install` command will set your default version of a tool. It will also fetch that tool if it isn't already cached locally. It has the following synax:
+The `volta install` command will set your default version of a tool. It will also fetch that tool if it isn't already cached locally. It has the following syntax:
 
 ```
 Installs a tool in your toolchain

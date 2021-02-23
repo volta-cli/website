@@ -17,8 +17,6 @@ Volta is a hassle-free way to manage your JavaScript command-line tools.
 - Stable tool installation—no reinstalling on every Node upgrade!
 - Extensibility hooks for site-specific customization
 
-{% include warn.html content="Volta is still in development, so we still expect some hiccups until it stabilizes. We welcome feedback and participation!" %}
-
 ## Why Volta?
 
 Volta's job is to get out of your way.

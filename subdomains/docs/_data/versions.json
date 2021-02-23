@@ -1,35 +1,35 @@
 {
   "node": {
     "stable": {
-      "major": 12,
-      "full": "12.2.0"
+      "major": 14,
+      "full": "14.15.5"
     },
     "recent": {
-      "major": 10,
-      "partial": "10.15",
-      "full": "10.15.3"
+      "major": 12,
+      "partial": "12.20",
+      "full": "12.20.2"
     }
   },
   "typescript": {
     "stable": {
-      "major": 3,
-      "full": "3.4.5"
+      "major": 4,
+      "full": "4.1.5"
     },
     "recent": {
-      "major": 2,
-      "partial": "2.9",
-      "full": "2.9.2"
+      "major": 3,
+      "partial": "3.9",
+      "full": "3.9.4"
     }
   },
   "yarn": {
     "stable": {
       "major": 1,
-      "full": "1.16.0"
+      "full": "1.22.10"
     },
     "recent": {
       "major": 1,
-      "partial": "1.14",
-      "full": "1.14.0"
+      "partial": "1.19",
+      "full": "1.19.2"
     }
   }
 }

@@ -5,6 +5,8 @@ date:   2019-02-05 10:07:41 -0700
 categories: update
 author: Dave Herman
 ---
+<span class="blog-notice">**NOTE: This post predates this project's [rename to Volta](https://blog.volta.sh/2019/05/13/hello-volta/).**</span>
+
 _Notion is a **JavaScript toolchain manager**, making sure you always get the right version of Node, package managers like npm and Yarn, and JS command-line tools. Best of all, Notion makes tool requirements **declarative and reproducible** by using_ `package.json` _to remember and launch the right versions of a project’s required tools, so developers and users always see their projects build and run in a consistent environment._
 
 # What's new?

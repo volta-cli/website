@@ -14,7 +14,7 @@ You control the tools managed by your Volta toolchain with two commands: `volta 
 
 ### Installing Node engines
 
-When you install a tool to your toolchain, you always choose a _default version_ of that tool, which Volta will use unless you're working within a project directory that has configured Volta to use a different version.
+When you install a tool to your toolchain, you always choose a _default version_ of that tool, which Volta will use unless you're working within a project directory that has configured Volta to use a different version. Alternatively, you can use `volta fetch` to install a tool locally without changing the _default version_.
 
 For example, you can select your default version of `node` by installing a particular version:
 

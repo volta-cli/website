@@ -13,9 +13,9 @@ Similar to package managers, Volta keeps track of which project (if any) you're 
 You control the tools managed by your Volta toolchain with two commands: `volta install` and `volta uninstall`.
 
 ### Installing Node engines
-Every time you install a tool to your toolchain, you set the default version of that tool, which Volta will use unless you're working within a project directory that has configured Volta to use a different version.
+To install a tool to your toolchain, you set the _default version_ of that tool. Volta will always use this default, unless you're working within a project directory that has configured Volta to use a different version. When you choose a default version, Volta will also download that version to the local cache.
 
-For example, you can select your default version of `node` by installing a particular version:
+For example, you can select an exact version of `node` to be your default version:
 
 ```sh
 volta install node@{{ site.data.versions.node.stable.full }}

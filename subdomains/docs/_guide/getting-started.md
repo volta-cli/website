@@ -6,7 +6,7 @@ title: Getting Started
 
 ## Unix Installation
 
-On most Unix systems, you can install Volta with a single command:
+On most Unix systems including macOS, you can install Volta with a single command:
 
 ```bash
 curl https://get.volta.sh | bash

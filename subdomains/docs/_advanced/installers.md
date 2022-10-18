@@ -38,10 +38,10 @@ curl https://get.volta.sh | bash -s -- --skip-setup
 
 ## Installing Old Versions
 
-The default installer script provided by [get.volta.sh](https://get.volta.sh) only supports installing Volta 0.7.0 and above. If you wish to install an older version, you can install it using the following script (on Unix, replacing `0.6.8` with the version you want to install):
+The default installer script provided by [get.volta.sh](https://get.volta.sh) only supports installing Volta 1.1.0 and above. If you wish to install an older version, you can install it using the following script on Unix, replacing `1.0.8` with the version you want to install:
 
 ```
-curl https://raw.githubusercontent.com/volta-cli/volta/e0290c2d7b0e80bf64e7c5d403789bc51678d16c/dev/unix/volta-install.sh | bash -s -- --version 0.6.8
+curl https://raw.githubusercontent.com/volta-cli/volta/8f2074f423c65405dfba9858d9bcf393c38ffb45/dev/unix/volta-install.sh | bash -s -- --version 1.0.8
 ```
 
 For Windows, you can download and install the Installer `.msi` file for the specific version that you want to install.

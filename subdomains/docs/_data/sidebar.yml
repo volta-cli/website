@@ -79,6 +79,9 @@
     - id: uninstall
       url: /advanced/uninstall
       title: Uninstalling Volta
+    - id: pnpm
+      url: /advanced/pnpm
+      title: pnpm Support
 - id: contributing
   url: /contributing/
   title: Contributing

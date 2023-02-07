@@ -16,4 +16,4 @@ Currently, global installations (e.g. `pnpm install -g`) are not supported and w
 
 ### Migrating
 
-There is no automatic migration at the moment, so if you previously had `pnpm` installed as a Volta global, you will need to manually re-install it by calling `volta install pnpm`.
+There is no automatic migration at the moment, so if you previously had `pnpm` installed as a Volta global, you will need to manually re-install it by calling `volta install pnpm`. Before enabling the support and doing the re-install, you may uninstall the previously installed `pnpm` package via `volta uninstall pnpm`. Once you switch to the native pnpm support, you may not remove the isolated old `pnpm` package by calling the same command because lack of uninstall implementation as of now.

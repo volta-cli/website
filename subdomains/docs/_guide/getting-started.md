@@ -20,6 +20,12 @@ For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and
 
 For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.
 
+Or use [`winget`](https://aka.ms/winget-cli):
+
+```bash
+winget install Volta.Volta
+```
+
 {% include note.html content="Volta's functionality depends on creating symlinks, so you must either:
 <ul>
     <li>Enable <a href=\"https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development#accessing-settings-for-developers\" target=\"_blank\" noreferrer noopener>Developer Mode</a> (recommended)</li>

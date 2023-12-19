@@ -8,6 +8,7 @@ To test one of the subdomains, run a Jekyll server from its subdirectory. For ex
 
 ```sh
 cd subdomains/www
+bundle install
 bundle exec jekyll serve
 ```
 

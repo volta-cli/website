@@ -4,7 +4,9 @@ title: Getting Started
 
 # Getting Started
 
-## Unix Installation
+## Install Volta
+
+### Unix Installation
 
 On most Unix systems including macOS, you can install Volta with a single command:
 
@@ -22,7 +24,7 @@ You need set your default version of node before running any of Volta's commands
 volta install node
 ```
 
-## Windows Installation
+### Windows Installation
 
 For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.
 
@@ -32,6 +34,23 @@ For Windows, [download and run the Windows installer](https://github.com/volta-c
     <li>Run Volta with elevated privileges (not recommended)</li>
 </ul>" %}
 
-### Windows Subsystem for Linux
+#### Windows Subsystem for Linux
 
 If you are using Volta within the Windows Subsystem for Linux, follow the Unix installation guide above.
+
+
+## Select a default Node version
+
+This is the version that Volta will use everywhere outside of projects that have a pinned version. The `volta pin node` command will use this version by default.
+
+To select a specific version of Node, run:
+
+```bash
+volta install node@{{ site.data.versions.node.stable.full }}
+```
+
+Or to use the latest LTS version, run:
+
+```bash
+volta install node
+```

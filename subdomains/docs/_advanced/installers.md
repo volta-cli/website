@@ -40,7 +40,7 @@ Follow the instructions in [getting started](/guide/getting-started) to manually
 
 ## Github CI
 
-Volta distrubites a custom [Github action](https://github.com/volta-cli/action) that will automatically download Volta, cache it, and download the pinned versions of your tools in the project's `package.json`.
+For convenience, we provide a custom [Github action](https://github.com/volta-cli/action) which will automatically download Volta, cache it, and download the pinned versions of your tools in the project's `package.json`.
 
 ## Installing Old Versions
 

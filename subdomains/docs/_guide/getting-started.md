@@ -35,7 +35,7 @@ If you are using Volta within the Windows Subsystem for Linux, follow the Unix i
 
 ## Select a default Node version
 
-This is the version that Volta will use everywhere outside of projects that have a pinned version. The `volta pin node` command will use this version by default.
+This is the version that Volta will use everywhere outside of projects that have a pinned version.
 
 To select a specific version of Node, run:
 

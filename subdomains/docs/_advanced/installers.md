@@ -34,8 +34,6 @@ If you wish to run the installer but do not want your profile scripts modified b
 curl https://get.volta.sh | bash -s -- --skip-setup
 ```
 
-Follow the instructions in [getting started](/guide/getting-started) to manually finish setting up Volta.
-
 {% include note.html content="We don't currently support skipping <code>volta setup</code> on Windows." %}
 
 ## Github CI

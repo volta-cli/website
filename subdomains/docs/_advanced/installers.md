@@ -38,6 +38,10 @@ Follow the instructions in [getting started](/guide/getting-started) to manually
 
 {% include note.html content="We don't currently support skipping <code>volta setup</code> on Windows." %}
 
+## Github CI
+
+Volta distrubites a custom [Github action](https://github.com/volta-cli/action) that will automatically download Volta, cache it, and download the pinned versions of your tools in the project's `package.json`.
+
 ## Installing Old Versions
 
 The default installer script provided by [get.volta.sh](https://get.volta.sh) only supports installing Volta 1.1.0 and above. If you wish to install an older version, you can install it using the following script on Unix, replacing `1.0.8` with the version you want to install:
@@ -76,7 +80,3 @@ Updating the PATH can be managed manually, if desired, or you can call `volta se
 ### Custom Volta Home (Optional)
 
 If you wish to use a different directory for the Volta data than the default `VOLTA_HOME` listed in the previous section, you need to set the environment variable `VOLTA_HOME` to that directory. If that is set, then `volta setup` will still work correctly for a custom data directory.
-
-## Github CI
-
-Volta distrubites a custom [Github action](https://github.com/volta-cli/action) that will automatically download Volta, cache it, and download the pinned versions of your tools in the project's `package.json`.

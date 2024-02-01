@@ -16,6 +16,12 @@ For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and
 - Set the `VOLTA_HOME` variable to `$HOME/.volta`
 - Add `$VOLTA_HOME/bin` to the beginning of your `PATH` variable
 
+You need set your default version of node before running any of Volta's commands, to use the LTS version of node run:
+
+```bash
+volta install node
+```
+
 ## Windows Installation
 
 For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.

@@ -36,6 +36,10 @@ curl https://get.volta.sh | bash -s -- --skip-setup
 
 {% include note.html content="We don't currently support skipping <code>volta setup</code> on Windows." %}
 
+## Github CI
+
+For convenience, we provide a custom [Github action](https://github.com/volta-cli/action) which will automatically download Volta, cache it, and download the pinned versions of your tools in the project's `package.json`.
+
 ## Installing Old Versions
 
 The default installer script provided by [get.volta.sh](https://get.volta.sh) only supports installing Volta 1.1.0 and above. If you wish to install an older version, you can install it using the following script on Unix, replacing `1.0.8` with the version you want to install:

@@ -4,7 +4,9 @@ title: Getting Started
 
 # Getting Started
 
-## Unix Installation
+## Install Volta
+
+### Unix Installation
 
 On most Unix systems including macOS, you can install Volta with a single command:
 
@@ -16,7 +18,7 @@ For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and
 - Set the `VOLTA_HOME` variable to `$HOME/.volta`
 - Add `$VOLTA_HOME/bin` to the beginning of your `PATH` variable
 
-## Windows Installation
+### Windows Installation
 
 For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.
 
@@ -26,6 +28,23 @@ For Windows, [download and run the Windows installer](https://github.com/volta-c
     <li>Run Volta with elevated privileges (not recommended)</li>
 </ul>" %}
 
-### Windows Subsystem for Linux
+#### Windows Subsystem for Linux
 
 If you are using Volta within the Windows Subsystem for Linux, follow the Unix installation guide above.
+
+
+## Select a default Node version
+
+This is the version that Volta will use everywhere outside of projects that have a pinned version.
+
+To select a specific version of Node, run:
+
+```bash
+volta install node@{{ site.data.versions.node.stable.full }}
+```
+
+Or to use the latest LTS version, run:
+
+```bash
+volta install node
+```

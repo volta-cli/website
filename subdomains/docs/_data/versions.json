@@ -1,24 +1,24 @@
 {
   "node": {
     "stable": {
-      "major": 20,
-      "full": "20.11.0"
+      "major": 22,
+      "full": "22.5.1"
     },
     "recent": {
-      "major": 18,
-      "partial": "18.19",
-      "full": "18.19.0"
+      "major": 20,
+      "partial": "20.16",
+      "full": "20.16.0"
     }
   },
   "typescript": {
     "stable": {
       "major": 5,
-      "full": "5.3.3"
+      "full": "5.5.4"
     },
     "recent": {
       "major": 4,
       "partial": "4.9",
-      "full": "4.9.3"
+      "full": "4.9.5"
     }
   },
   "yarn": {

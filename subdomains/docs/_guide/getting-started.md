@@ -20,13 +20,13 @@ For [bash](https://www.gnu.org/software/bash/), [zsh](https://www.zsh.org/), and
 
 ### Windows Installation
 
-For Windows, [download and run the Windows installer](https://github.com/volta-cli/volta/releases/download/v{{ site.data.latest-version }}/volta-{{ site.data.latest-version }}-windows-x86_64.msi) and follow the instructions.
+For Windows, the recommended method of installing Volta is using [winget](https://github.com/microsoft/winget-cli):
 
-{% include note.html content="Volta's functionality depends on creating symlinks, so you must either:
-<ul>
-    <li>Enable <a href=\"https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development#accessing-settings-for-developers\" target=\"_blank\" noreferrer noopener>Developer Mode</a> (recommended)</li>
-    <li>Run Volta with elevated privileges (not recommended)</li>
-</ul>" %}
+```bash
+winget install Volta.Volta
+```
+
+If you prefer, you can [download the installer directly](https://github.com/volta-cli/volta/releases/v{{ site.data.latest-version }}) and run it manually to install Volta.
 
 #### Windows Subsystem for Linux
 

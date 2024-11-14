@@ -20,8 +20,9 @@ rm -rf ~/.volta
     1. `.bashrc`
     2. `.bash_profile`
     3. `.zshrc`
-    4. `config.fish`
-    5. `.profile`
+    4. `.zshenv`
+    5. `config.fish`
+    6. `.profile`
 
 {% include note.html content="You may need to open a new terminal after making this change, as many shells cache the location of recent commands" %}
 

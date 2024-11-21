@@ -15,7 +15,7 @@ features:
 
 ```bash
 # install Volta
-curl https://get.volta.sh | bash
+curl -sSf https://get.volta.sh | bash
 
 # install Node
 volta install node

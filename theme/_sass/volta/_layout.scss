@@ -32,6 +32,7 @@ header {
 
     .home-link {
       img {
+        width: 72px;
         height: 32px;
       }
     }
@@ -156,7 +157,7 @@ main.home {
     h1 {
       padding: 0.5em 0 0 0;
       background-position: top center;
-      background-image: url('/assets/wordmark.jpg');
+      background-image: url('/assets/wordmark.png');
       background-repeat: no-repeat;
       background-size: 338px 150px;
       width: 338px;
